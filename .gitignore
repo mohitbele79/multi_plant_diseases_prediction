@@ -78,10 +78,7 @@ Plant_Diseas_prediction/data/
 Plant_Diseas_prediction/test/
 Plant_Diseas_prediction/saved_model_ccn/
 
-# Model files (if they're large)
-*.h5
-*.pkl
-*.joblib
+
 
 # Upload directories
 Flask app/static/uploads/
