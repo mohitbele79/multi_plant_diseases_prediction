@@ -1,0 +1,298 @@
+[
+    
+        {
+           "name": "Apple Apple scab",
+           "info": "Apple scab is a fungal disease that causes dark, sunken lesions on leaves, fruit, and stems.",
+           "solutions": [
+               "Remove infected leaves and fruits.",
+               "Apply fungicides containing chlorothalonil or mancozeb.",
+               "Ensure proper air circulation to prevent fungal growth."
+           ]
+       },
+        {
+           "name": "Apple Black rot",
+           "info": "Black rot is caused by a fungal pathogen and leads to dark lesions on fruits and stems.",
+           "solutions": [
+               "Prune infected branches and dispose of them.",
+               "Apply fungicides with a copper base.",
+               "Ensure proper spacing and air circulation for the plants."
+           ]
+       },
+        {
+           "name": "Apple Cedar apple rust",
+           "info": "Cedar apple rust is a fungal disease that causes yellow-orange lesions on leaves and fruit.",
+           "solutions": [
+               "Remove infected leaves and fruits.",
+               "Spray fungicides containing captan or sulfur.",
+               "Control cedar trees near apple orchards as they are alternate hosts."
+           ]
+       },
+        {
+           "name": "Apple healthy",
+           "info": "Your apple plant is healthy. No disease detected.",
+           "solutions": [
+               "Keep up regular watering and care!"
+           ]
+       },
+        {
+           "name": "Blueberry healthy",
+           "info": "Your blueberry plant is healthy. No disease detected.",
+           "solutions": [
+               "Ensure proper watering, especially during dry periods."
+           ]
+       },
+        {
+           "name": "Cherry healthy",
+           "info": "Your cherry plant is healthy. No disease detected.",
+           "solutions": [
+               "Maintain proper irrigation and care."
+           ]
+       },
+        {
+           "name": "Cherry Powdery mildew",
+           "info": "Powdery mildew is a fungal disease that causes white, powdery growth on leaves, stems, and buds.",
+           "solutions": [
+               "Remove infected parts of the plant.",
+               "Apply fungicides containing sulfur or neem oil.",
+               "Ensure good airflow around the plant to reduce humidity."
+           ]
+       },
+        {
+           "name": "Corn Cercospora leaf spot",
+           "info": "Cercospora leaf spot is a fungal disease that causes grayish lesions on corn leaves.",
+           "solutions": [
+               "Remove infected leaves and apply fungicides.",
+               "Avoid overhead irrigation to reduce leaf wetness."
+           ]
+       },
+        {
+           "name": "Corn Common rust",
+           "info": "Common rust is a fungal disease that causes reddish pustules on corn leaves.",
+           "solutions": [
+               "Remove infected plants and leaves.",
+               "Apply fungicides to prevent further spread."
+           ]
+       },
+        {
+           "name": "Corn healthy",
+           "info": "Your corn plant is healthy. No disease detected.",
+           "solutions": [
+               "Ensure proper soil and water conditions."
+           ]
+       },
+        {
+           "name": "Corn Northern Leaf Blight",
+           "info": "Northern leaf blight causes long, grayish lesions on corn leaves.",
+           "solutions": [
+               "Remove infected leaves.",
+               "Apply fungicides such as tebuconazole or azoxystrobin."
+           ]
+       },
+        {
+           "name": "Grape Black rot",
+           "info": "Black rot is caused by a fungal pathogen and leads to black lesions on grape berries and leaves.",
+           "solutions": [
+               "Remove infected parts of the plant.",
+               "Apply fungicides with copper or sulfur."
+           ]
+       },
+        {
+           "name": "Grape Esca(Black Measles)",
+           "info": "Esca is a grapevine disease that causes rapid wilting and a decrease in berry quality.",
+           "solutions": [
+               "Remove infected vines and treat with fungicides.",
+               "Prune away infected wood to limit disease spread."
+           ]
+       },
+        {
+           "name": "Grape healthy",
+           "info": "Your grape plant is healthy. No disease detected.",
+           "solutions": [
+               "Keep your plant hydrated and prune regularly."
+           ]
+       },
+        {
+           "name": "Grape Leaf blight",
+           "info": "Leaf blight causes yellowing and browning of grape leaves, leading to poor fruit quality.",
+           "solutions": [
+               "Remove and discard infected leaves.",
+               "Apply fungicides with sulfur or copper."
+           ]
+       },
+        {
+           "name": "Orange Haunglongbing",
+           "info": "Haunglongbing (HLB), also known as citrus greening, is a bacterial disease that causes yellowing of leaves and fruit drop.",
+           "solutions": [
+               "Remove infected trees.",
+               "Use antibiotics to manage bacterial spread."
+           ]
+       },
+        {
+           "name": "Peach Bacterial spot",
+           "info": "Bacterial spot causes dark, sunken lesions on peach leaves, twigs, and fruit.",
+           "solutions": [
+               "Prune infected branches and dispose of them.",
+               "Use copper-based bactericides to prevent infection."
+           ]
+       },
+        {
+           "name": "Peach healthy",
+           "info": "Your peach plant is healthy. No disease detected.",
+           "solutions": [
+               "Regular watering and pruning will help maintain its health."
+           ]
+       },
+        {
+           "name": "Pepper bell Bacterial spot",
+           "info": "Bacterial spot causes lesions on pepper leaves, stems, and fruit.",
+           "solutions": [
+               "Remove and dispose of infected plant parts.",
+               "Apply copper-based bactericides."
+           ]
+       },
+        {
+           "name": "Pepper bell healthy",
+           "info": "Your pepper plant is healthy. No disease detected.",
+           "solutions": [
+               "Regular irrigation and care are essential."
+           ]
+       },
+        {
+           "name": "Potato Early blight",
+           "info": "Early blight causes dark, concentric rings on potato leaves, often leading to leaf death.",
+           "solutions": [
+               "Remove infected leaves and apply fungicides.",
+               "Ensure proper plant spacing and air circulation."
+           ]
+       },
+        {
+           "name": "Potato healthy",
+           "info": "Your potato plant is healthy. No disease detected.",
+           "solutions": [
+               "Maintain proper watering and soil health."
+           ]
+       },
+        {
+           "name": "Potato Late blight",
+           "info": "Late blight is a fungal disease that causes dark lesions on potato leaves and tubers.",
+           "solutions": [
+               "Remove infected parts immediately.",
+               "Apply fungicides like metalaxyl or chlorothalonil."
+           ]
+       },
+        {
+           "name": "Raspberry healthy",
+           "info": "Your raspberry plant is healthy. No disease detected.",
+           "solutions": [
+               "Keep your plant hydrated and properly pruned."
+           ]
+       },
+        {
+           "name": "Soybean healthy",
+           "info": "Your soybean plant is healthy. No disease detected.",
+           "solutions": [
+               "Monitor for pest damage and ensure good soil conditions."
+           ]
+       },
+        {
+           "name": "Squash Powdery mildew",
+           "info": "Powdery mildew causes a white, powdery fungal growth on squash leaves.",
+           "solutions": [
+               "Remove infected leaves and apply fungicides.",
+               "Increase plant spacing to reduce humidity."
+           ]
+       },
+        {
+           "name": "Strawberry healthy",
+           "info": "Your strawberry plant is healthy. No disease detected.",
+           "solutions": [
+               "Regular watering and care will help maintain plant health."
+           ]
+       },
+        {
+           "name": "Strawberry Leaf scorch",
+           "info": "Leaf scorch causes browning and drying at the edges of strawberry leaves.",
+           "solutions": [
+               "Water regularly and avoid over-fertilizing.",
+               "Remove affected leaves to reduce spread."
+           ]
+       },
+        {
+           "name": "Tomato Bacterial spot",
+           "info": "Bacterial spot causes dark, sunken lesions on tomato leaves and fruits.",
+           "solutions": [
+               "Remove infected parts and dispose of them.",
+               "Use copper-based bactericides."
+           ]
+       },
+        {
+           "name": "Tomato Early blight",
+           "info": "Early blight causes dark, circular spots on tomato leaves and stems.",
+           "solutions": [
+               "Remove infected leaves and stems.",
+               "Apply fungicides containing chlorothalonil."
+           ]
+       },
+        {
+           "name": "Tomato healthy",
+           "info": "Your tomato plant is healthy. No disease detected.",
+           "solutions": [
+               "Ensure proper watering and support for healthy growth."
+           ]
+       },
+        {
+           "name": "Tomato Late blight",
+           "info": "Late blight causes dark lesions on tomato leaves, stems, and fruit.",
+           "solutions": [
+               "Remove and discard infected parts.",
+               "Apply fungicides such as mefenoxam."
+           ]
+       },
+        {
+           "name": "Tomato Leaf Mold",
+           "info": "Leaf mold is a fungal disease causing yellowing and mold on tomato leaves.",
+           "solutions": [
+               "Prune infected leaves and ensure proper air circulation."
+           ]
+       },
+        {
+           "name": "Tomato Septoria leaf spot",
+           "info": "Septoria leaf spot causes small, dark lesions on tomato leaves.",
+           "solutions": [
+               "Remove infected leaves and apply fungicides.",
+               "Ensure proper irrigation practices."
+           ]
+       },
+        {
+           "name": "Tomato Spider mites Two-spotted spider mite",
+           "info": "Spider mites cause speckled, discolored leaves on tomato plants.",
+           "solutions": [
+               "Apply miticides and remove infected leaves."
+           ]
+       },
+        {
+           "name": "Tomato Target Spot",
+           "info": "Target Spot causes circular, necrotic lesions on tomato leaves.",
+           "solutions": [
+               "Remove infected leaves and apply fungicides."
+           ]
+       },
+        {
+           "name": "Tomato Tomato mosaic virus",
+           "info": "Tomato mosaic virus causes mottling and distortion of tomato leaves.",
+           "solutions": [
+               "Remove and destroy infected plants.",
+               "Use virus-free seeds for planting."
+           ]
+       },
+        {
+           "name": "Tomato Tomato Yellow Leaf Curl Virus",
+           "info": "Yellow Leaf Curl Virus causes yellowing and curling of tomato leaves.",
+           "solutions": [
+               "Remove infected plants.",
+               "Use resistant varieties of tomatoes."
+           ]
+       }
+   
+   
+]

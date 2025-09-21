@@ -1,0 +1,205 @@
+{% extends "base.html" %}
+
+{% block title %}Prediction Result{% endblock %}
+
+{% block header %}Prediction Result{% endblock %}
+
+{% block content %}
+<style>
+    /* Global Styles */
+    body {
+        font-family: 'Roboto', Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        line-height: 1.6;
+        background: linear-gradient(120deg, #f0f0f0, #e6e6e6);
+        color: #333;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+    }
+
+    .container {
+        max-width: 700px;
+        background: #ffffff;
+        padding: 30px 25px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        border-radius: 10px;
+        text-align: center;
+        animation: fadeIn 0.8s ease-in-out;
+    }
+
+    .header h1 {
+        color: #333;
+        font-size: 2.2rem;
+        font-weight: 700;
+        margin-bottom: 20px;
+    }
+
+    /* Image Sections */
+    .image-container {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .image-container img {
+        width: 100%;
+        max-height: 250px;
+        object-fit: contain;
+        border-radius: 12px;
+        border: 3px solid #ddd;
+        transition: transform 0.3s ease;
+    }
+
+    .image-container img:hover {
+        transform: scale(1.05);
+    }
+
+    /* Result Information */
+    .result-info h2 {
+        color: #2c3e50;
+        font-size: 1.8rem;
+        margin-bottom: 10px;
+    }
+
+    .result-info p {
+        font-size: 1.1rem;
+        color: #555;
+    }
+
+    /* Solutions Section */
+    .solutions {
+        margin-top: 20px;
+        padding: 20px;
+        background: #f9f9f9;
+        border: 1px solid #e6e6e6;
+        border-radius: 8px;
+        text-align: left;
+    }
+
+    .solutions h3 {
+        font-size: 1.4rem;
+        color: #333;
+        margin-bottom: 15px;
+    }
+
+    .solutions p {
+        font-size: 1rem;
+        color: #666;
+    }
+
+    .solutions ul {
+        list-style: disc;
+        padding-left: 20px;
+    }
+
+    .solutions ul li {
+        font-size: 1rem;
+        color: #444;
+        margin-bottom: 8px;
+    }
+
+    /* Button Section */
+    .button-container {
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    .button-container a {
+        text-decoration: none;
+        background: linear-gradient(90deg, #007bff, #0056b3);
+        color: #fff;
+        padding: 12px 25px;
+        border-radius: 30px;
+        font-size: 1rem;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+        display: inline-block;
+    }
+
+    .button-container a:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 6px 15px rgba(0, 123, 255, 0.4);
+    }
+
+    /* Keyframe Animations */
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(-20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+        .container {
+            width: 90%;
+            padding: 20px;
+        }
+
+        .header h1 {
+            font-size: 1.8rem;
+        }
+
+        .result-info h2 {
+            font-size: 1.5rem;
+        }
+
+        .solutions h3 {
+            font-size: 1.2rem;
+        }
+
+        .button-container a {
+            padding: 10px 20px;
+            font-size: 0.9rem;
+        }
+    }
+</style>
+
+<div class="container">
+    <div class="header">
+        <h1>Prediction Result</h1>
+    </div>
+
+    <!-- Uploaded Image -->
+    <div class="image-container">
+        <h3>Uploaded Image:</h3>
+        <img src="{{ image_url }}" alt="Uploaded Image">
+    </div>
+
+    <!-- Predicted Image -->
+    {% if predicted_image_url %}
+    <div class="image-container">
+        <h3>Processed Image:</h3>
+        <img src="{{ predicted_image_url }}" alt="Predicted Image">
+    </div>
+    {% endif %}
+
+    <!-- Disease Prediction Result -->
+    <div class="result-info">
+        <h2>Disease: {{ disease }}</h2>
+        <p>Confidence: <strong>{{ confidence }}%</strong></p>
+    </div>
+
+    <!-- Disease Information & Suggested Solutions -->
+    <div class="solutions">
+        <h3>Disease Information:</h3>
+        <p>{{ disease_information }}</p>
+        <h3>Suggested Solutions:</h3>
+        <ul>
+            {% for solution in solutions %}
+                <li>{{ solution }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+
+    <!-- Try Again Button -->
+    <div class="button-container">
+        <a href="/">🔄 Try Again</a>
+    </div>
+</div>
+{% endblock %}

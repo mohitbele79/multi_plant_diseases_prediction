@@ -1,0 +1,268 @@
+{% extends "base.html" %}
+
+{% block title %}Home - Plant Disease Prediction{% endblock %}
+
+{% block content %}
+
+<!-- Common Diseases (Rounded Images & Improved Layout) -->
+<section class="card">
+    <h2>Common Leaf Diseases We Detect</h2>
+    <div class="slider-container">
+        <div class="slider">
+            {% for disease in diseases %}
+            <div class="disease-card">
+                <img src="{{ disease.image }}" alt="{{ disease.name }}">
+                <p>{{ disease.name }}</p>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<!-- Hero Section -->
+<section class="hero">
+    <div class="hero-overlay">
+        <div class="hero-content">
+            <h1>AI-Powered Plant Disease Detection</h1>
+            <p>Detect plant diseases early and ensure healthy crops with our AI-based solution.</p>
+            <button onclick="window.location.href='/predict'">Start Diagnosis</button>
+        </div>
+    </div>
+</section>
+
+<!-- How It Works -->
+<section class="steps">
+    <h2>How It Works</h2>
+    <div class="steps-container">
+        <div class="step">
+            <div class="icon-container">
+                <img src="{{ url_for('static', filename='upload-icon-20632.png') }}" alt="Upload Image">
+            </div>
+            <h3>Upload Image</h3>
+            <p>Select a clear image of your plant leaf.</p>
+        </div>
+        <div class="step">
+            <div class="icon-container">
+                <img src="{{ url_for('static', filename='analyze.png') }}" alt="AI Analysis">
+            </div>
+            <h3>AI Analysis</h3>
+            <p>Our AI model identifies potential diseases.</p>
+        </div>
+        <div class="step">
+            <div class="icon-container">
+                <img src="{{ url_for('static', filename='result.png') }}" alt="Get Results">
+            </div>
+            <h3>Get Diagnosis</h3>
+            <p>Receive detailed disease information and treatment suggestions.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Why Choose Us (Improved Design) -->
+<section class="why-choose">
+    <h2>Why Choose Our System?</h2>
+    <div class="features">
+        <div class="feature">
+            <span class="icon">🌱</span>
+            <h3>High Accuracy</h3>
+            <p>Trained on thousands of plant images for precise detection.</p>
+        </div>
+        <div class="feature">
+            <span class="icon">⚡</span>
+            <h3>Fast Results</h3>
+            <p>Get disease diagnosis within seconds.</p>
+        </div>
+        <div class="feature">
+            <span class="icon">💡</span>
+            <h3>Easy to Use</h3>
+            <p>No technical skills required. Just upload and get results!</p>
+        </div>
+    </div>
+</section>
+
+<!-- Developer Section -->
+<section class="developer">
+    <h2>Meet the Developer</h2>
+    <div class="developer-container">
+        <img src="{{ url_for('static', filename='mohit.jpg') }}" alt="Mohit">
+        <h3>Mohit</h3>
+        <p>Machine Learning & AI Developer</p>
+    </div>
+</section>
+
+<!-- Call to Action -->
+<section class="cta">
+    <h2>Start Your Plant Disease Detection Now</h2>
+    <button onclick="window.location.href='/predict'">Get Started</button>
+</section>
+
+<style>
+    /* General Styles */
+    body {
+        font-family: 'Poppins', sans-serif;
+        background-color: #f8f9fa;
+        color: #333;
+        margin: 0;
+        padding: 0;
+    }
+
+    /* Hero Section */
+    .hero {
+        background: url("{{ url_for('static', filename='hero-bg.jpg') }}") no-repeat center center/cover;
+        color: white;
+        text-align: center;
+        padding: 120px 20px;
+        position: relative;
+    }
+
+    .hero-overlay {
+        background: rgba(0, 0, 0, 0.5);
+        padding: 80px 20px;
+        border-radius: 10px;
+    }
+
+    .hero-content h1 {
+        font-size: 36px;
+    }
+
+    .hero-content button {
+        background: #4CAF50;
+        color: white;
+        padding: 12px 24px;
+        border: none;
+        cursor: pointer;
+        border-radius: 8px;
+    }
+
+    /* Common Diseases (Rounded Images) */
+    .slider-container {
+        width: 100%;
+        overflow: hidden;
+        margin-top: 20px;
+    }
+
+    .slider {
+        display: flex;
+        animation: slide 10s infinite linear;
+    }
+
+    .disease-card {
+        text-align: center;
+        flex: 0 0 auto;
+        margin: 0 15px;
+    }
+
+    .disease-card img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+    }
+
+    @keyframes slide {
+        0% { transform: translateX(0); }
+        100% { transform: translateX(-100%); }
+    }
+
+    /* How It Works */
+    .steps {
+        text-align: center;
+        padding: 50px 20px;
+    }
+
+    .steps-container {
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+        flex-wrap: wrap;
+    }
+
+    .icon-container {
+        width: 90px;
+        height: 90px;
+        background: #4CAF50;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+
+    /* Why Choose Us */
+    .why-choose {
+        text-align: center;
+        padding: 50px 20px;
+        background: white;
+    }
+
+    .features {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    .feature {
+        width: 280px;
+        background: #f1f1f1;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .feature:hover {
+        transform: scale(1.05);
+    }
+
+    /* Developer Section */
+    .developer {
+        text-align: center;
+        padding: 50px 20px;
+        background: #ffffff;
+    }
+
+    .developer-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .developer-container img {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+    }
+
+    /* CTA Section */
+    .cta {
+        text-align: center;
+        padding: 50px 20px;
+        background: #4CAF50;
+        color: white;
+    }
+
+    .cta button {
+        background: white;
+        color: #4CAF50;
+        padding: 12px 24px;
+        border-radius: 8px;
+        cursor: pointer;
+    }
+
+    .cta button:hover {
+        background: #f8f8f8;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+        .features, .steps-container {
+            flex-direction: column;
+        }
+
+        .feature, .developer-container img {
+            width: 100%;
+        }
+    }
+</style>
+
+{% endblock %}

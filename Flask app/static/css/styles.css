@@ -1,0 +1,99 @@
+
+/* General Styles */
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container Styles */
+.container {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 500px;
+    width: 90%;
+    text-align: center;
+}
+
+h2 {
+    color: #4CAF50;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Video and Image Styles */
+video, canvas, img {
+    width: 100%;
+    max-width: 400px;
+    margin: 10px auto;
+    border-radius: 10px;
+    border: 2px solid #e0e0e0;
+    display: block;
+}
+
+/* Button Styles */
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 10px 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+    transform: translateY(-2px);
+}
+
+button:active {
+    background-color: #388e3c;
+    transform: translateY(0);
+}
+
+/* File Input Styles */
+#file-input {
+    display: none;
+}
+
+/* Submit Button Visibility */
+#submit-btn {
+    display: none; /* Initially hidden */
+}
+
+button#submit-btn {
+    background-color: #1976D2;
+}
+
+button#submit-btn:hover {
+    background-color: #1565C0;
+}
+
+/* Form Styles */
+form {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form > div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+
